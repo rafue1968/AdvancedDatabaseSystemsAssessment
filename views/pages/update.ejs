@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+</head>
+<body>
+    <h1>Update Student</h1>
+    <form action="/update-student/<%= student._id %>" method="post">
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" name="studentName" id="studentName" value="<%= student.studentName %>" required><br><br>
+
+        <label for="StudentContactNo">Student Contact Number:</label>
+        <input type="text" name="StudentContactNo" id="studentContactNo" value="<%= student.StudentContactNo %>" required><br><br>
+
+        <label for="dateofbirth">Date of Birth:</label>
+        <input type="date" name="dateofbirth" id="dateofbirth" value="<%= student.dateofbirth %>" required><br><br>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" name="nationality" id="nationality" value="<%= student.nationality %>" required><br><br>
+
+        <label for="ethnicity">Ethnicity</label>
+        <input type="text" name="ethnicity" id="ethnicity" value="<%= student.nationality %>" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <!-- <input type="text" id="gender" name="gender" value="<%= student.gender %>" required><br><br> -->
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select> <br><br>
+
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="<%= student.email %>" required><br><br>
+
+
+        <label for="enrollmentDate">Enrollment Date:</label>
+        <input type="date" id="enrollmentDate" name="enrollmentDate" value="<%= student.enrollmentDate %>" required><br><br>
+
+        <label for="degreetype">Degree:</label>
+        <input type="text" id="degreetype" name="degreetype" value="<%= student.degreetype %>" required><br><br>
+
+        <label for="currentCourse">Current Course:</label>
+        <input type="text" id="currentCourse" name="currentCourse" value="<%= student.currentCourse %>" required><br><br>
+
+        <label for="currentUni">Current University:</label>
+        <input type="text" id="currentUni" name="currentUni" value="<%= student.currentUni %>" required><br><br>
+
+        <label for="currentAddress">Current Address:</label>
+        <input type="text" id="currentAddress" name="currentAddress" value="<%= student.currentAddress %>" required><br><br>
+
+        <label for="currentCity">Current City:</label>
+        <input type="text" id="currentCity" name="currentCity" value="<%= student.currentCity %>" required><br><br>
+
+        <label for="emergencyContactName">Emergency Contact Name:</label>
+        <input type="text" id="emergencyContactName" name="emergencyContactName" value="<%= student.emergencyContactName %>" required><br><br>
+
+        <label for="emergencyContactRelation">Emergency Contact Relation:</label>
+        <input type="text" id="emergencyContactRelation" name="emergencyContactRelation" value="<%= student.emergencyContactRelation %>" required><br><br>
+
+        <label for="emergencyContactPhone">Emergency Contact Number:</label>
+        <input type="text" id="emergencyContactPhone" name="emergencyContactPhone" value="<%= student.emergencyContactPhone %>" required><br><br>
+
+        <label for="emergencyContactEmail">Emergency Contact Email:</label>
+        <input type="text" id="emergencyContactEmail" name="emergencyContactEmail" value="<%= student.emergencyContactEmail %>" required><br><br>
+
+        <button type="submit">Update Student</button>
+
+
+
+    </form>
+
+    <a href="/">Go Back</a>
+</body>
+</html>

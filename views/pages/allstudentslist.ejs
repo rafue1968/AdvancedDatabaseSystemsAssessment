@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/styles/webpage.css">
+    <title>View All Students</title>
+</head>
+<body>
+    <h1>View All Students</h1>
+
+    <ul>
+        <% if (students.length === 0){ %>
+
+            <li>There are no Students found.</li>
+
+        <% } else { %>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Contact Number</th>
+                    <th>Date of Birth</th>
+                    <th>Nationality</th>
+                    <th>Ethnicity</th>
+                    <th>Gender</th>
+                    <th>Email</th>
+                    <th>Enrollment Date</th>
+                    <th>Degree</th>
+                    <th>Current Course</th>
+                    <th>Current University</th>
+                    <th>Current Address</th>
+                    <th>Current City</th>
+                    <th>Emergency Contact Name</th>
+                    <th>Emergency Contact Relation</th>
+                    <th>Emergency Contact Number</th>
+                    <th>Emergency Contact Email</th>
+                    <!-- <th>Actions</th> -->
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <% students.forEach(student => { %>
+                <!-- <li> -->
+                <tr>
+                    
+                    <td><% student.studentName %> - <%= student.studentName %></td>
+                    <td><% student.studentName %> - <%= student.StudentContactNo %></td>
+                    <td><% student.studentName %> - <%= student.dateofbirth %></td>
+                    <td><% student.studentName %> - <%= student.nationality %></td>
+                    <td><% student.studentName %> - <%= student.ethnicity %></td>
+                    <td><% student.studentName %> - <%= student.gender %></td>
+                    <td><% student.studentName %> - <%= student.email %></td>
+                    <td><% student.studentName %> - <%= student.enrollmentDate %></td>
+                    <td><% student.studentName %> - <%= student.degreetype %></td>
+                    <td><% student.studentName %> - <%= student.currentCourse %></td>
+                    <td><% student.studentName %> - <%= student.currentUni %></td>
+                    <td><% student.studentName %> - <%= student.currentAddress %></td>
+                    <td><% student.studentName %> - <%= student.currentCity %></td>
+                    <td><% student.studentName %> - <%= student.emergencyContactName %></td>
+                    <td><% student.studentName %> - <%= student.emergencyContactRelation %></td>
+                    <td><% student.studentName %> - <%= student.emergencyContactPhone %></td>
+                    <td><% student.studentName %> - <%= student.emergencyContactEmail %></td>
+
+
+                    <!-- <a href="/single-student/<%= student._id %>">View</a>
+                    <a href="/edit-student/<%= student._id %>">Edit</a>
+                    <form action="/delete-student/<%= student._id %>" method="post" style="display:inline;">
+                        <button type="submit">Delete</button>
+                    </form> -->
+                </tr>
+                <!-- </li> -->
+    <% }) %>
+
+        </table>
+
+    <% } %>
+    </ul>
+
+    <a href="/">Go Back</a>
+    
+</body>
+</html>

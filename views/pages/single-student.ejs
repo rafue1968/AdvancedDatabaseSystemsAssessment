@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <p><strong>Name: </strong> <%= student.studentName %></p>
+    <p><strong>ID: </strong> <%= student.studentId %></p>
+    <p><strong>Date of Birth: </strong> <%= student.dateofbirth %></p>
+    <p><strong>Nationality: </strong> <%= student.nationality %></p>
+
+
+    
+    <a href="/update-student/<%= student.studentName %>">Edit</a>
+    
+
+    <form action="/delete-student/<%= student.studentName %>" method="post">
+        <button type="submit">Delete</button>
+    </form>
+
+    
+    <!-- <a href="/edit-student/<%= student._id %>">Edit</a> -->
+
+
+    <a href="/">Go Back</a>
+    
+</body>
+</html>

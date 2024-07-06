@@ -1,0 +1,58 @@
+[
+  {
+    "_id": {
+      "$oid": "6660ca3a5236dfb3737a1fd6"
+    },
+    "studentName": "Karyofilis",
+    "studentId": "9892189",
+    "dateofbirth": "1984-03-16",
+    "nationality": "Spanish",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1717619258905"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1717619258905"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "663a462b809c0464ead60a5f"
+    },
+    "studentName": "Rafue",
+    "studentId": "1234567",
+    "dateofbirth": "16-11-2002",
+    "nationality": "Ireland",
+    "createdAt": {
+      "$date": {
+        "$numberLong": "1715095083859"
+      }
+    },
+    "updatedAt": {
+      "$date": {
+        "$numberLong": "1715095083859"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "studentName": "Jamie",
+    "studentId": "Meakin",
+    "dateofbirth": "2013-10-13",
+    "nationality": "England"
+  },
+  {
+    "studentName": "Sonia",
+    "studentId": "19829821938",
+    "dateofbirth": "1985-02-12",
+    "nationality": "Bangladesh"
+  }
+]
